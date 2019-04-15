@@ -9,7 +9,7 @@ $.ajax({
         method: "GET",
         success: function(data) {
         var imgUrl = data.data[0].images.fixed_height_still.url;
-         alert(imgUrl);  
+        $(".gallery").append("<img src = '" + imgUrl + "'>");
          
         }
     }); 
